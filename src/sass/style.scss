@@ -1,0 +1,508 @@
+@import 'variables';
+@import 'normalize';
+@import 'mixins';
+@import 'fonts';
+@import 'components/container';
+@import 'components/footer';
+
+body{
+    font-family: $fontRoboto;
+}
+
+.container{
+    max-width: 1250px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.top-block{
+    background-color: $black;
+    padding: 7px 0;
+
+    &__text{
+        margin: 0 auto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: #FBFBFB;
+    }
+}
+
+.header{
+    padding: 15px 20px 15px 11px;
+
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__first-block{
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo-block{
+        width: 160px;
+        height: 36px;
+        margin-right: 125px;
+    }
+
+    &__nav-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__nav-list-item{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $black;
+        margin-right: 23px;
+    }
+
+    &__nav-link{
+        &:last-of-type{
+            .header__nav-list-item{
+                margin-right: 0;
+            }
+        }
+    }
+    
+    &__icons-block{
+        display: flex;
+        align-items: center;
+    }
+    
+    &__icon{
+        margin-right: 11px;
+
+        &:last-of-type{
+            margin-right: 0;
+        }
+    }
+}
+
+.main-title{
+    height: 810px;
+    background-image: url("../img/main-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 53px 0;
+
+    &__text-block{
+        text-align: center;
+    }
+
+    &__title{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 44px;
+        line-height: 51px;
+        color: $black;
+        margin-bottom: 14px;
+    }
+
+    &__text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 1px;
+        color: $black;
+        margin-bottom: 27px;
+    }
+
+    &__btns-block{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__btn{
+        background-color: $btnColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 22px;
+        color: $whiteColor;
+        border-radius: 35px;
+        border: 1px solid $btnColor;
+
+        &:nth-of-type(1){
+            margin-right: 12px;
+            padding: 5px 47px;
+        }
+
+        &:nth-of-type(2){
+            padding: 5px 37px;
+        }
+    }
+}
+
+.brands{
+    background-color: $black;
+    padding: 18px 0 17px 0;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.choice{
+    padding: 52px 0 20px 0;
+
+    &__text-block{
+        position: relative;
+        width: 685px;
+        text-align: center;
+        margin: 0 auto 72px;
+
+        &::before{
+            content: " ";
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            width: 70px;
+            height: 2px;
+            transform: translateX(-50%);
+            background-color: #CFCFCF;
+        }
+    }
+
+    &__title{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 36px;
+        color: $black;
+        margin-bottom: 17px;
+    }
+
+    &__text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 19px;
+        color: $black;
+    }
+
+    &__items{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__link-block{
+        width: 580px;
+        height: 580px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:nth-of-type(1){
+            background-image: url("../img/choice-img1.jpg");
+            margin-right: 20px;
+        }
+
+        &:nth-of-type(2){
+            background-image: url("../img/choice-img2.jpg");
+        }
+    }
+
+    &__inner-text-block{
+        text-align: center;
+    }
+
+    &__icon{
+        margin: 0 auto 11.5px;
+    }
+
+    &__inner-title{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 30px;
+        color: $whiteColor;
+        margin-bottom: 14px;
+    }
+
+    &__inner-text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        color: $whiteColor;
+    }
+}
+
+.skateboards{
+    height: 736px;
+    background-image: url("../img/skateboards-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 44px 0;
+
+    &__text-block{
+        width: 488px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &__top-text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 1px;
+        color: $black;
+        margin-bottom: 11px;
+    }
+
+    &__title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 51px;
+        color: $black;
+        margin-bottom: 15px;
+    }
+
+    &__text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 1px;
+        color: $black;
+        margin-bottom: 20px;
+    }
+
+    &__btn{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        color: $whiteColor;
+        padding: 5px 66px;
+        background-color: $btnColor;
+        border: 1px solid $btnColor;
+        border-radius: 35px;
+    }
+}
+
+.rev-info{
+    padding: 45px 0;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__img-block{
+        width: 380px;
+        height: 380px;
+
+        &:first-of-type{
+            margin-right: 20px;
+        }
+    }
+
+
+    &__text-block{
+        width: 400px;
+        margin-left: 40px;
+    }
+
+    &__title{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 38px;
+        color: $black;
+        margin-bottom: 21px;
+    }
+
+    &__text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 22px;
+        color: $black;
+        margin-bottom: 18px;
+    }
+
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 22px;
+        color: $whiteColor;
+        padding: 5px 16px;
+        background-color: $btnColor;
+        border: 1px solid $btnColor;
+        border-radius: 35px;
+    }
+}
+
+.shops{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 480px;
+
+    &__link-block{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:nth-child(1){
+            background-image: url("../img/shops-img1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        &:nth-child(2){
+            background-image: url("../img/shops-img2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        &:nth-child(3){
+            background-image: url("../img/shops-img3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    &__text-block{
+        text-align: center;
+    }
+
+    &__title{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 30px;
+        color: $whiteColor;
+        margin-bottom: 15px;
+    }
+
+    &__text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        color: $whiteColor;
+    }
+}
+
+.video{
+    padding: 55px 0 64px 0;
+
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__player{
+        width: 540px;
+        height: 304px;
+
+        &:first-of-type{
+            margin-right: 20px;
+        }
+    }
+}
+
+.accessories{
+
+    &__title{
+        position: relative;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        color: $black;
+        margin-bottom: 66px;
+
+        &::before{
+            content: " ";
+            position: absolute;
+            bottom: -21px;
+            left: 50%;
+            width: 70px;
+            height: 2px;
+            transform: translateX(-50%);
+            background-color: #CFCFCF;
+        }
+    }
+
+    &__items{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item{
+        margin-right: 20px;
+        text-align: center;
+        padding-bottom: 1px;
+
+        &:last-of-type{
+            margin-right: 0;
+        }
+    }
+
+    &__img{
+        margin-bottom: 12px;
+    }
+
+    &__item-title{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: $btnColor;
+        margin-bottom: 3px;
+    }
+
+    &__price{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #373737;
+
+        .red{
+            color: $btnColor;
+        }
+
+        .grey{
+            color: rgba(0, 0, 0, 0.3);
+        }
+    }
+    
+}
